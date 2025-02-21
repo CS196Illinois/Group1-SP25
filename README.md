@@ -1,8 +1,8 @@
 # Group 1
-Project Name: PROJECT_NAME
+Project Name: Stackfolio
 
-[MVP Link](https://docs.google.com/document/d/1xFI9DDdO5HZAcu36Y6NL-RTDry5E3WHkfy-ZEWuqbXM/edit?usp=sharing)
+[MVP Link](https://docs.google.com/document/d/1qzk2lAiGXpnA0LuX1-8VnD5GxnbqMcme/edit?usp=sharing&ouid=103913186610547567391&rtpof=true&sd=true)
 
-Team Members: STUDENTS_NETIDS
+Team Members: hannahi2, mel11, chetant2	
 
-Project Manager: PM_NETID
+Project Manager: amath24, divvyam3
