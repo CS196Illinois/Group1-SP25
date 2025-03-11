@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Submission Form</title>
+</head>
+<body>
+        Full Name: <input type="text" name="name"> <br>
+        Website Style   : <select name="style">
+            <option value="1st">First</option>
+            <option value="2nd">Second</option>
+            <option value="3rd">Third</option>
+            <option value="4th">Fourth</option>
+    h1>Submit a PDF File</h1>
+    <form action="/submit-pdf" method="post" enctype="multipart/form-data">
+        <label for="pdfFile">Choose a PDF file to upload:</label><br><br>
+        <input type="file" id="pdfFile" name="pdfFile" accept=".pdf" required><br><br>
+        <input type="submit" value="Submit PDF">
+    </form>
+</body>
+</html>
