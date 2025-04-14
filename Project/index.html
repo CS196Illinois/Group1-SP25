@@ -1,28 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PDF Submission Form</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sitecraft.AI - Resume Upload</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <h1>Submit a PDF File</h1>
-    <form action="/submit-resume" method="post" enctype="multipart/form-data">
-        <label for="name">Full Name:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
+  <div class="form-container">
+    <!-- Main Heading -->
+    <h1>Sitecraft.AI</h1>
+    <!-- Subtitle / Instruction -->
+    <h2>First...tell us about yourself</h2>
+
+    <!-- Upload Form -->
+    <form action="/submit-resume" method="POST" enctype="multipart/form-data">
+      
+      <!-- Full Name -->
+      <label for="fullName">Full Name</label>
+      <input 
+        type="text" 
+        id="fullName" 
+        name="fullName" 
+        placeholder="e.g. John Doe" 
+        required
+      />
+      
+      <!-- LinkedIn Profile -->
+      <label for="linkedin">LinkedIn Profile</label>
+      <input 
+        type="url" 
+        id="linkedin" 
+        name="linkedin" 
+        placeholder="Your Link"
+      />
+
+      <!-- Style -->
+      <label for="style">Style</label>
+      <input 
+        type="text" 
+        id="style" 
+        name="style" 
+        placeholder="e.g. Minimal, flashy, etc." 
+      />
+
+      <!-- Upload Section -->
+      <div class="upload-section" onclick="document.getElementById('resumeFile').click()">
+        <div class="upload-instructions">
+          <!-- Replace “☁” with your own cloud icon or image if desired -->
+          <span class="cloud-icon">☁</span>
+          <p>Upload your resume or any relevant document!</p>
+        </div>
         
-        <label for="style">Website Style:</label><br>
-        <select id="style" name="style" required>
-            <option value="1st">First</option>
-            <option value="2nd">Second</option>
-            <option value="3rd">Third</option>
-            <option value="4th">Fourth</option>
-        </select><br><br>
+        <input 
+          type="file" 
+          id="resumeFile" 
+          name="resumeFile" 
+          accept=".pdf" 
+          required 
+          hidden 
+        />
         
-        <label for="resumeFile">Choose a PDF file to upload:</label><br><br>
-        <input type="file" id="resumeFile" name="resumeFile" accept=".pdf" required><br><br>
-        <input type="submit" value="Submit PDF">
+        <label for="resumeFile" class="upload-button">Choose File(s)</label>
+      </div>
+
+      <!-- Buttons -->
+      <div class="form-buttons">
+        <button type="submit">Continue</button>
+        <button 
+          type="button" 
+          onclick="window.location.href='/'"
+        >
+          Cancel
+        </button>
+      </div>
     </form>
+  </div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
